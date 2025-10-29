@@ -1,0 +1,325 @@
+/* Definição de Cores e Fontes (Variáveis CSS) */
+:root {
+    --cor-principal: #004d40;      /* Um verde escuro ou tom de azul marinho (primário) */
+    --cor-secundaria: #80cbc4;    /* Um tom claro para destaques (secundário) */
+    --cor-fundo: #f5f5f5;         /* Fundo bem claro, quase branco */
+    --cor-texto: #333;            /* Cor escura para o texto */
+    --fonte-principal: 'Arial', sans-serif;
+}
+
+/* Reset básico para garantir consistência em todos os navegadores */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Corpo do Site */
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6; /* Aumenta o espaçamento das linhas para melhor leitura */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* Estilo da Área Principal de Conteúdo */
+main {
+    max-width: 1000px; /* Limita a largura para melhor leitura em telas grandes */
+    margin: 30px auto; /* Centraliza o conteúdo e adiciona margem acima/abaixo */
+    padding: 0 20px;
+}
+
+/* Estilo de Títulos e Parágrafos */
+h2 {
+    color: var(--cor-principal);
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555; /* Um tom de cinza para sub-títulos */
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a barra de navegação completa */
+nav {
+    background-color: #333; /* Cor de fundo escura */
+    padding: 10px 0; /* Espaçamento vertical */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo para a lista (onde está o menu) */
+nav ul {
+    list-style: none; /* Remove as bolinhas (marcadores) */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centraliza a lista na tela */
+
+    /* A MÁGICA: Transforma a lista em uma linha horizontal */
+    display: flex; 
+    justify-content: center; /* Centraliza os itens dentro da lista */
+    gap: 20px; /* Adiciona espaçamento entre os itens do menu */
+}
+
+/* Estilo para o item da lista (cada link) */
+nav li {
+    display: inline-block; /* Garante que os itens fiquem na mesma linha */
+}
+
+/* Estilo para os LINKS do menu */
+nav a {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaçamento ao redor do texto */
+    transition: background-color 0.3s; /* Transição suave para o efeito hover */
+    display: block; /* Faz o link ocupar toda a área para ser clicável */
+}
+
+/* Efeito quando o mouse passa sobre o link */
+nav a:hover {
+    background-color: #555; /* Escurece um pouco a cor de fundo */
+    border-radius: 5px; /* Arredonda as bordas */
+}
+
+/* Estiliza as figuras para dar um bloco de conteúdo */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Estiliza a imagem dentro da figura */
+figure img {
+    /* Define o tamanho fixo da imagem (ajuste os valores se preferir outro) */
+    width: 100%;       /* Ocupa a largura total do seu artigo */
+    max-width: 600px;  /* Limita o tamanho em telas grandes */
+    height: 350px;     /* Altura fixa (todas terão essa altura) */
+    
+    /* ESSA É A PROPRIEDADE CHAVE: */
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer, cortando o excesso */
+    
+    border-radius: 5px; /* Adiciona bordas arredondadas (opcional, para um toque moderno) */
+}
+
+/* Estilo para a legenda da imagem */
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+.secao-categoria {
+    margin-bottom: 40px;
+    max-width: 960px; 
+    margin: 40px auto; 
+}
+
+.secao-categoria h3 {
+    color: var(--cor-principal);
+    border-bottom: 1px solid var(--cor-secundaria);
+    padding-bottom: 5px;
+    margin: 0 0 15px 0;
+    padding-left: 20px;
+}
+
+/* Estilo para as informações complementares (o texto abaixo da rolagem) */
+.informacoes-complementares {
+    max-width: 100%; 
+    margin: 20px 0 50px 0; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes-complementares ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.informacoes-complementares a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para o Contêiner de Grade */
+.grid-container {
+    display: grid;
+    /* Define 3 colunas de largura igual. Se houver menos de 3, elas se ajustarão. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px 0;
+}
+
+/* O Cartão Individual na Grade */
+.festa-card-grid {
+    /* Manter a proporção e o visual limpo */
+    height: 250px; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Configuração para posicionamento da legenda */
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.2s;
+}
+
+.festa-card-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da Imagem (Ocupa o cartão inteiro) */
+.festa-card-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o card */
+}
+
+/* Título da Foto sobre a Imagem */
+.festa-card-grid h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Container geral para alinhar os cards de contato */
+.contatos-artesaos {
+    display: flex;
+    /* Envolve para a linha de contatos quebrar em telas menores */
+    flex-wrap: wrap; 
+    gap: 20px; /* Espaço entre os cartões de contato */
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd; /* Linha divisória sutil */
+}
+
+/* Card individual de Contato */
+.contato-card {
+    display: flex;
+    flex-direction: column; /* Organiza itens em coluna */
+    align-items: center; /* Centraliza a foto e o texto */
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    /* Ajuste de largura para que caibam vários na linha */
+    width: 150px; 
+    min-width: 120px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Nome do Artesão */
+.nome-contato {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+}
+
+/* Estilo para os Links (Instagram, Facebook, etc.) */
+.contato-card a {
+    /* Retiramos a formatação bold do link para não conflitar com .informacoes-complementares a */
+    font-weight: normal; 
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 2px 0;
+    transition: color 0.2s;
+}
+
+.contato-card a:hover {
+    color: var(--cor-principal);
+}
+
+/* Estilo específico para o Telefone (se quiser um destaque) */
+.tel-contato {
+    font-weight: bold;
+    color: #4CAF50; /* Um verde chamativo para o telefone */
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: var(--cor-texto); /* Cor de fundo escura, pode ser a mesma do nav */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    
+    /* 1. Ajuste Geral do Conteúdo */
+    /* Garante que o conteúdo não fique "colado" nas laterais do celular */
+    main {
+        padding: 0 10px;
+        margin: 20px auto;
+    }
+
+    /* 2. Menu de Navegação */
+    /* Transforma o menu horizontal em vertical para não quebrar */
+    nav ul {
+        flex-direction: column; /* Coloca os links um abaixo do outro */
+        gap: 0; /* Remove o espaçamento entre eles */
+    }
+
+    /* Ajusta o espaçamento dos links para o celular */
+    nav a {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #444; /* Adiciona uma linha divisória para separar os links */
+    }
+    
+    /* Remove a borda no último item para não duplicar */
+    nav li:last-child a {
+        border-bottom: none; 
+    }
+
+    /* 3. Fotos da Página História */
+    /* Remove o limite de largura para que as imagens ocupem a tela inteira do celular */
+    figure img {
+        height: auto; /* A altura se adapta ao conteúdo (sem altura fixa) */
+        max-width: 100%;
+        object-fit: contain; /* Ajusta a imagem dentro do espaço para não cortar tanto */
+    }
+
+    /* 4. Página Artes e Música (Layout Grid) */
+    /* Em telas muito pequenas, as fotos da grade ficam em uma única coluna */
+    .grid-container {
+        /* Define 1 coluna para celular, facilitando a visualização */
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    /* Garante que o cartão de contato (circular) não ocupe muita largura */
+    .contato-card {
+        width: 48%; /* Permite 2 cards por linha na maioria dos celulares, economizando espaço */
+        min-width: 100px;
+    }
+}
