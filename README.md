@@ -1,4 +1,4 @@
-# 🏛️ Guia Cultural de Pirapetinga: Difusão e História Web
+## 🏛️ Guia Cultural de Pirapetinga: Difusão e História Web
 
 ![Status Badge](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20%7C%20CSS3%20%7C%20Responsividade-orange)
@@ -9,11 +9,11 @@ Website funcional e totalmente responsivo desenvolvido para atender a uma necess
 
 ## 🎯 Sumário
 
-1.  [Demonstração](#demonstração)
-2.  [Tecnologias Utilizadas](#tecnologias-utilizadas)
-3.  [Objetivo e Destaque Profissional](#objetivo-e-destaque-profissional)
-4.  [Organização e Estrutura](#organização-e-estrutura)
-5.  [Autor](#autor)
+##1.  [Demonstração](#demonstração)
+##2.  [Tecnologias Utilizadas](#tecnologias-utilizadas)
+##3.  [Objetivo e Destaque Profissional](#objetivo-e-destaque-profissional)
+##4.  [Organização e Estrutura](#organização-e-estrutura)
+##5.  [Autor](#autor)
 
 ---
 
