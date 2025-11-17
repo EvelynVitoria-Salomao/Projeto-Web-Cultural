@@ -9,15 +9,15 @@ Website funcional e totalmente responsivo desenvolvido para atender a uma necess
 
 ## 🎯 Sumário
 
-##1.  [Demonstração](#demonstração)
-##2.  [Tecnologias Utilizadas](#tecnologias-utilizadas)
-##3.  [Objetivo e Destaque Profissional](#objetivo-e-destaque-profissional)
-##4.  [Organização e Estrutura](#organização-e-estrutura)
-##5.  [Autor](#autor)
+1.  [Demonstracao](#demonstracao)
+2.  [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3.  [Objetivo e Destaque Profissional](#objetivo-e-destaque-profissional)
+4.  [Organizacao e Estrutura](#organizacao-e-estrutura)
+5.  [Autor](#autor)
 
 ---
 
-## 1. Demonstração
+## 1. Demonstracao
 
 Clique no link abaixo para visualizar o projeto completo e navegável:
 🔗 **[Link do Guia Cultural de Pirapetinga AQUI]** (Ex: `https://projetowebcultural.netlify.app/`)
@@ -53,7 +53,7 @@ Este projeto comprova as seguintes habilidades, essenciais para o trabalho remot
 
 ---
 
-## 4. Organização e Estrutura
+## 4. Organizacao e Estrutura
 
 O projeto é composto pelas seguintes páginas:
 
